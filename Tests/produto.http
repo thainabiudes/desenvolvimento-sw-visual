@@ -1,0 +1,10 @@
+###
+POST https://localhost:5001/api/produto/create
+Content-Type: application/json
+
+{
+  "Nome": "Caqui",
+  "Preco": 5.7,
+  "Descricao": "Fruta laranjada e adocicada",
+  "Quantidade": 2
+}
