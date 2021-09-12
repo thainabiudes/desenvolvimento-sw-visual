@@ -3,8 +3,17 @@ POST https://localhost:5001/api/produto/create
 Content-Type: application/json
 
 {
-  "Nome": "Caqui",
+  "Nome": "caqui",
   "Preco": 5.7,
   "Descricao": "Fruta laranjada e adocicada",
   "Quantidade": 2
 }
+
+###
+GET https://localhost:5001/api/produto/list
+
+###
+GET https://localhost:5001/api/produto/getById/1
+
+###
+DELETE  https://localhost:5001/api/produto/delete/caqui
