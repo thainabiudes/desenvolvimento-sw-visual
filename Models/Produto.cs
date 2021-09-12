@@ -4,10 +4,7 @@ namespace API.Models
 {
   public class Produto 
   {
-    public Produto() 
-    {
-      CriadoEm = DateTime.Now;
-    }
+    public Produto() => CriadoEm = DateTime.Now;
 
     public int Id { get; set; }
     public string Nome { get; set; }
@@ -16,9 +13,7 @@ namespace API.Models
     public int Quantidade { get; set; } 
     public DateTime CriadoEm { get; set; }
 
-    public override string ToString()
-    { //base é o super do java
-      return $"Nome: {Nome} | Preço: {Preco.ToString("C2")}";
-    }
+    public override string ToString() =>
+      $"Nome: {Nome} | Preço: {Preco.ToString("C2")}";    
   }
 }
