@@ -3,10 +3,10 @@ POST https://localhost:5001/api/produto/create
 Content-Type: application/json
 
 {
-  "Nome": "caqui",
-  "Preco": 5.7,
-  "Descricao": "Fruta laranjada e adocicada",
-  "Quantidade": 2
+  "Nome": "pizza",
+  "Preco": 60,
+  "Descricao": "Massa de pão com fatias de queijo e recheio",
+  "Quantidade": 1
 }
 
 ###
