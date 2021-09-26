@@ -59,5 +59,19 @@ namespace API.Controllers
       await _context.SaveChangesAsync();
       return Ok(produto);
     }
+
+    [HttpPut]
+    [Route("update")]
+    public async Task<IActionResult> UpdateAsync([FromBody] Produto produto)
+    {
+      Produto prod = await _context.Produtos.FirstOrDefaultAsync(prod => prod.Id == produto.Id);
+      prod.Nome = produto.Nome;
+      prod.Descricao = produto.Descricao;
+      prod.Preco = produto.Preco;
+      prod.Quantidade = produto.Quantidade;
+      _context.Produtos.Update(prod);
+      await _context.SaveChangesAsync();
+      return Ok(prod);
+    }
   }
 }

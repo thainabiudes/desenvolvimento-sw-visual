@@ -10,6 +10,18 @@ Content-Type: application/json
 }
 
 ###
+PUT https://localhost:5001/api/produto/update
+Content-Type: application/json
+
+{
+  "Id": 2,
+  "Nome": "Espagueti",
+  "Preco": 60,
+  "Descricao": "Macarrão fino e comprido",
+  "Quantidade": 1
+}
+
+###
 GET https://localhost:5001/api/produto/list
 
 ###
