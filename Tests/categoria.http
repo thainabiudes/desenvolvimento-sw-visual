@@ -1,0 +1,9 @@
+POST https://localhost:5001/api/categoria/create
+Content-Type: application/json
+
+{
+    "Nome" : "Alimento"
+}
+
+###
+GET https://localhost:5001/api/categoria/list
