@@ -12,5 +12,6 @@ namespace API.Data
     }
     // lista de propriedades que serão transformadas em tabela no banco de dados
     public DbSet<Produto> Produtos { get; set; }
+    public DbSet<Categoria> Categorias { get; set; }
   }
 }
